@@ -1,87 +1,71 @@
-# تطبيق الحلاقة (Barber Shop App)
+# Barber Shop App
 
-تطبيق لإدارة قائمة انتظار محل الحلاقة، يعمل على نظامي iOS و Android.
+An application for managing the customer queue in a barber shop, working on both iOS and Android platforms.
 
-## الميزات الرئيسية
+## Key Features
 
-### واجهة الزبون
-- إضافة اسم الزبون إلى قائمة الانتظار
-- عرض قائمة الانتظار الحالية
-- إمكانية حذف الاسم من القائمة
-- عرض حالة المحل (مفتوح/مغلق)
+### Customer Interface
+- Add customer name to the queue list
+- View the current queue list
+- Ability to delete the name from the list
+- View shop status (Open/Closed)
 
-### واجهة الحلاق
-- تسجيل الدخول بكلمة مرور
-- عرض قائمة الانتظار
-- إمكانية حذف زبون من القائمة
-- زر للانتقال إلى الزبون التالي
-- إمكانية قفل/فتح التطبيق
+### Barber Interface
+- Login with a password
+- View the queue list
+- Ability to delete a customer from the list
+- Button to move to the next customer
+- Ability to lock/unlock the application
 
-## التقنيات المستخدمة
+## Technologies Used
 
-- **لغة البرمجة**: Dart
-- **إطار العمل**: Flutter
-- **إدارة الحالة**: Provider
-- **تخزين البيانات**: Hive
-- **اللغة**: العربية فقط
+- **Programming Language**: Dart
+- **Framework**: Flutter
+- **State Management**: Provider
+- **Data Storage**: Hive
+- **Language**: Arabic only
 
-## متطلبات النظام
+## System Requirements
 
-- Flutter SDK 3.0.0 أو أحدث
-- Dart SDK 3.0.0 أو أحدث
+- Flutter SDK 3.0.0 or later
+- Dart SDK 3.0.0 or later
 - Android Studio / VS Code
-- للتشغيل على iOS: جهاز Mac مع Xcode
-- للتشغيل على Android: Android SDK
+- To run on iOS: Mac device with Xcode
+- To run on Android: Android SDK
 
-## طريقة التثبيت
+## Installation Guide
 
-1. تأكد من تثبيت Flutter SDK على جهازك
-2. قم بتنزيل أو استنساخ المشروع
-3. افتح المشروع في Android Studio أو VS Code
-4. قم بتثبيت التبعيات باستخدام الأمر:
-   ```
-   flutter pub get
-   ```
-5. قم بتشغيل التطبيق باستخدام الأمر:
-   ```
-   flutter run
-   ```
+1. Make sure Flutter SDK is installed on your device
+2. Download or clone the project
+3. Open the project in Android Studio or VS Code
+4. Install dependencies using the command:
+## flutter pub get 
+5. Run the application using the command:
+6. flutter run
 
-## هيكل المشروع
+## How to Use
 
-```
-lib/
-  ├── providers/             # مزودي الحالة
-  ├── screens/               # شاشات التطبيق
-  ├── services/              # خدمات التطبيق
-  ├── widgets/               # عناصر واجهة المستخدم
-  └── main.dart              # نقطة الدخول للتطبيق
-```
+### For Customers
+1. Open the application
+2. Enter your name in the designated field
+3. Press the "Join Queue" button
+4. You can delete your name from the list by pressing the delete button
 
-## طريقة الاستخدام
+### For Barbers
+1. Open the application
+2. Press the settings icon in the upper corner
+3. Enter the password (Default: 123)
+4. You can now manage the queue list and the shop status
 
-### للزبائن
-1. افتح التطبيق
-2. أدخل اسمك في الحقل المخصص
-3. اضغط على زر "الانضمام إلى قائمة الانتظار"
-4. يمكنك حذف اسمك من القائمة بالضغط على زر الحذف
+## Default Settings
 
-### للحلاق
-1. افتح التطبيق
-2. اضغط على أيقونة الإعدادات في الزاوية العلوية
-3. أدخل كلمة المرور (الافتراضية: 123)
-4. يمكنك الآن إدارة قائمة الانتظار وحالة المحل
+- **Barber Password**: 123
+- **Shop Status**: Open
 
-## الإعدادات الافتراضية
+## Developer
 
-- **كلمة مرور الحلاق**: 123
-- **حالة المحل**: مفتوح
+This application was developed by YZxCS.
 
-## المطور
+## License
 
-تم تطوير هذا التطبيق بواسطة يوسف.
-
-## الترخيص
-
-هذا المشروع مرخص تحت رخصة MIT.
-
+This project is licensed under the MIT License.
